@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dusun Gondangan Kidul — Profil Dusun</title>
+
+<link rel="icon" type="image/png" href="assets/logo depan.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       NAVBAR
+  ========================================================= -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="nav-brand">
+        <img class="logo-img" src="assets/logo depan.jpeg" alt="Logo Gondangan Kidul">
+        <div class="nav-brand-text">
+          <strong>Gondangan Kidul</strong>
+          <small>KKN AA.84.128</small>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#profil" class="nav-link">Profil</a></li>
+          <li><a href="#lokasi" class="nav-link">Lokasi Penting</a></li>
+          <li><a href="#umkm" class="nav-link">UMKM</a></li>
+          <li><a href="#kegiatan" class="nav-link">Kegiatan</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       HERO SECTION
+  ========================================================= -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">KKN AA.84.128 &middot; Profil Dusun Gondangan Kidul</span>
+      <h1>
+        <span class="line-accent">SELAMAT DATANG DI DUSUN</span>
+        <span class="line-white">GONDANGAN KIDUL</span>
+      </h1>
+      <p class="hero-desc">
+        Sebuah wadah informasi berbasis digital untuk menjelajahi potensi desa, produk UMKM lokal, 
+        kegiatan kemasyarakatan, dan kehangatan tradisi warga Dusun Gondangan Kidul.
+      </p>
+      <div class="hero-cta">
+        <a href="#profil" class="btn btn-primary">Lihat Profil Dusun</a>
+        <a href="#umkm" class="btn btn-outline">Jelajahi UMKM</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PROFIL DUSUN SECTION
+  ========================================================= -->
+  <section class="section-pad" id="profil">
+    <div class="container">
+      <h2 class="section-title">Profil <span>Dusun</span></h2>
+      <p class="section-sub">
+        Dusun Gondangan Kidul terletak di batas paling tenggara Desa Pakunden, Ngluwar, yang berbatasan langsung dengan 
+        Kabupaten Sleman, D.I. Yogyakarta di tepi Kali Krasak. Memiliki lanskap agraris nan asri di kaki Gunung Merapi, 
+        dusun ini hidup dengan semangat gotong royong, tradisi Jawa yang kental, serta potensi ekonomi lokal seperti produksi 
+        emping melinjo dan olahan camilan warga. Harmoni kearifan lokal dan keramahan masyarakatnya menjadikan Gondangan Kidul 
+        lingkungan yang hangat, mandiri, dan selalu terasa homey.
+
+      </p>
+
+      <div class="demografi-grid reveal" id="demoGrid">
+        <!-- Total Penduduk & KK - full width -->
+        <div class="demo-card full">
+          <div>
+            <div class="demo-label">Total Penduduk</div>
+            <div class="demo-value">385<span class="unit">Jiwa</span></div>
+          </div>
+          <div class="demo-icon">👨‍👩‍👧‍👦</div>
+        </div>
+
+        <div class="demo-card full">
+          <div>
+            <div class="demo-label">Kepala Keluarga</div>
+            <div class="demo-value">135<span class="unit">KK</span></div>
+          </div>
+          <div class="demo-icon">🏠</div>
+        </div>
+
+        <!-- Laki-laki & Perempuan - half width -->
+        <div class="demo-card half">
+          <div class="demo-label">Laki-laki</div>
+          <div class="demo-value">193<span class="unit">Jiwa</span></div>
+          <div class="demo-bar-track"><div class="demo-bar-fill" style="width:50.1%"></div></div>
+        </div>
+
+        <div class="demo-card half">
+          <div class="demo-label">Perempuan</div>
+          <div class="demo-value">192<span class="unit">Jiwa</span></div>
+          <div class="demo-bar-track"><div class="demo-bar-fill" style="width:49.9%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       GRAFIK SECTION (Pekerjaan & Pendidikan)
+  ========================================================= -->
+  <section class="section-pad" id="grafik">
+    <div class="container">
+      <h2 class="section-title">Data <span>Pekerjaan &amp; Pendidikan</span></h2>
+      <p class="section-sub">
+        Gambaran mengenai mata pencaharian dan tingkat pendidikan warga
+        Dusun Gondangan Kidul.
+      </p>
+
+      <div class="grafik-grid">
+        <!-- PEKERJAAN -->
+        <div class="grafik-card reveal">
+          <h3>Data Pekerjaan</h3>
+          <div class="grafik-meta">Berdasarkan jumlah jiwa per kategori</div>
+
+          <div class="bar-list" id="pekerjaanBars">
+            <div class="bar-row" data-value="68" data-max="68">
+              <div class="bar-row-top"><span class="bar-name">Buruh Tani</span><span class="bar-num">68 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+            <div class="bar-row" data-value="61" data-max="68">
+              <div class="bar-row-top"><span class="bar-name">Tidak/Belum Bekerja</span><span class="bar-num">61 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+            <div class="bar-row" data-value="59" data-max="68">
+              <div class="bar-row-top"><span class="bar-name">Pelajar/Mahasiswa</span><span class="bar-num">59 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+            <div class="bar-row" data-value="58" data-max="68">
+              <div class="bar-row-top"><span class="bar-name">Karyawan Swasta</span><span class="bar-num">58 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+            <div class="bar-row" data-value="54" data-max="68">
+              <div class="bar-row-top"><span class="bar-name">Buruh Harian Lepas</span><span class="bar-num">54 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+            <div class="bar-row" data-value="28" data-max="68">
+              <div class="bar-row-top"><span class="bar-name">Mengurus Rumah Tangga</span><span class="bar-num">28 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+            <div class="bar-row" data-value="16" data-max="68">
+              <div class="bar-row-top"><span class="bar-name">Petani/Pekebun</span><span class="bar-num">16 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PENDIDIKAN -->
+        <div class="grafik-card reveal">
+          <h3>Data Pendidikan</h3>
+          <div class="grafik-meta">Berdasarkan jumlah jiwa per jenjang</div>
+
+          <div class="bar-list" id="pendidikanBars">
+            <div class="bar-row" data-value="134" data-max="134">
+              <div class="bar-row-top"><span class="bar-name">SLTA/Sederajat</span><span class="bar-num">134 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+            <div class="bar-row" data-value="98" data-max="134">
+              <div class="bar-row-top"><span class="bar-name">Tamat SD/Sederajat</span><span class="bar-num">98 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+            <div class="bar-row" data-value="66" data-max="134">
+              <div class="bar-row-top"><span class="bar-name">Tidak/Belum Sekolah</span><span class="bar-num">66 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+            <div class="bar-row" data-value="43" data-max="134">
+              <div class="bar-row-top"><span class="bar-name">SLTP/Sederajat</span><span class="bar-num">43 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+            <div class="bar-row" data-value="38" data-max="134">
+              <div class="bar-row-top"><span class="bar-name">Belum Tamat SD/Sederajat</span><span class="bar-num">38 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+            <div class="bar-row" data-value="7" data-max="134">
+              <div class="bar-row-top"><span class="bar-name">Diploma IV/Strata I</span><span class="bar-num">7 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+            <div class="bar-row" data-value="2" data-max="134">
+              <div class="bar-row-top"><span class="bar-name">Akademi/Diploma III</span><span class="bar-num">2 Jiwa</span></div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       LOKASI PENTING SECTION
+  ========================================================= -->
+  <section class="section-pad" id="lokasi">
+    <div class="container">
+      <h2 class="section-title">Lokasi <span>Penting</span></h2>
+      <p class="section-sub">
+        Beberapa titik penting dan bersejarah di sekitar Dusun Gondangan Kidul
+        yang dapat dikunjungi.
+      </p>
+
+      <div class="card-grid reveal">
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="assets/tempat_penting/Sendang Slilin.jpeg" alt="Sendang Selilin">
+          </div>
+          <div class="place-body">
+            <h4>Sendang Selilin</h4>
+            <p>Mata air alami yang menjadi sumber kehidupan dan tempat bersejarah bagi warga sekitar.</p>
+            <a href="https://maps.app.goo.gl/GhQLQiiF9b115yr99" class="place-btn">Lokasi</a>
+          </div>
+        </div>
+
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="assets/tempat_penting/Masjid.jpeg" alt="Masjid Al - Barokah">
+          </div>
+          <div class="place-body">
+            <h4>Masjid Al - Barokah</h4>
+            <p>Tempat ibadah utama penduduk dusun Gondangan Kidul dan sekitarnya.</p>
+            <a href="https://maps.app.goo.gl/vwMse9rkCYa4SHR99" class="place-btn">Lokasi</a>
+          </div>
+        </div>
+
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="assets/tempat_penting/Mushola.jpeg" alt="Mushola Al-Iman">
+          </div>
+          <div class="place-body">
+            <h4>Mushola Al-Iman</h4>
+            <p>Tempat ibadah utama sekaligus pusat kegiatan keagamaan warga dusun.</p>
+            <a href="https://maps.app.goo.gl/of8ibETaZofjpMje9" class="place-btn">Lokasi</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lokasi Extra (hidden by default, toggled by JS) -->
+      <div class="extra-cards" id="lokasiExtra">
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="assets/tempat_penting/TPA.jpeg" alt="TPA Gondangan Kidul">
+          </div>
+          <div class="place-body">
+            <h4>TPA Gondangan Kidul</h4>
+            <p>Tempat ibadah utama sekaligus pusat kegiatan keagamaan warga dusun.</p>
+            <a href="https://maps.app.goo.gl/tH66Vm8nrDZxDV1x6" class="place-btn">Lokasi</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="umkm-toggle-wrap">
+        <button class="toggle-btn" id="lokasiToggleBtn">
+          <span class="label">Selengkapnya</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       UMKM SECTION
+  ========================================================= -->
+  <section class="section-pad" id="umkm">
+    <div class="container">
+      <h2 class="section-title">Persebaran <span>UMKM</span></h2>
+      <p class="section-sub">
+        Beragam usaha mikro, kecil, dan menengah hasil karya warga Dusun
+        Gondangan Kidul yang patut untuk didukung.
+      </p>
+
+      <div class="card-grid reveal">
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="assets/umkm/Aluminium.jpeg" alt="Kanza Aluminium">
+          </div>
+          <div class="place-body">
+            <h4>Kanza Aluminium</h4>
+            <p>Usaha produksi peralatan rumah berbahan aluminium diproduksi rumahan.</p>
+            <a href="https://maps.app.goo.gl/VRUws5Rmf9AUsCRGA" class="place-btn">Lokasi</a>
+          </div>
+        </div>
+
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="assets/umkm/Batako Pak Dayat.jpeg" alt="Percetakan Batako Pak Dayat">
+          </div>
+          <div class="place-body">
+            <h4>Percetakan Batako Pak Dayat</h4>
+            <p>Usaha percetakan batako dengan kualitas terbaik dan harga terjangkau.</p>
+            <a href="https://maps.app.goo.gl/rVkx8f9smjtWbKaS9" class="place-btn">Lokasi</a>
+          </div>
+        </div>
+
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="assets/umkm/mie ayam ijo.jpeg" alt="Mie Ayam Ijo">
+          </div>
+          <div class="place-body">
+            <h4>Mie Ayam Ijo</h4>
+            <p>Warung mie ayam dengan rasa lezat dan harga terjangkau.</p>
+            <a href="https://maps.app.goo.gl/iTfo2m9svdWLmtcw7" class="place-btn">Lokasi</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- UMKM Extra (hidden by default, toggled by JS) -->
+      <div class="extra-cards" id="umkmExtra">
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="assets/umkm/Mebel Pak Yanto.jpeg" alt="Mebel Pak Yanto">
+          </div>
+          <div class="place-body">
+            <h4>Mebel Pak Yanto</h4>
+            <p>Usaha produksi furnitur kayu dengan kualitas terbaik dan harga terjangkau.</p>
+            <a href="https://maps.app.goo.gl/x9Dg9jT2GMjizjUY8" class="place-btn">Lokasi</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="umkm-toggle-wrap">
+        <button class="toggle-btn" id="umkmToggleBtn">
+          <span class="label">Selengkapnya</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" id="kegiatan">
+    <div class="container">
+      <h2 class="section-title">Dokumentasi <span>Kegiatan</span></h2>
+      <p class="section-sub">
+        Momen-momen kegiatan KKN bersama masyarakat Dusun Gondangan Kidul.
+      </p>
+
+      <div class="card-grid reveal">
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="assets/kegiatan/posyandu.jpeg" alt="Posyandu Sumber Waras">
+          </div>
+          <div class="place-body">
+            <h4>Posyandu Sumber Waras</h4>
+            <p> Kegiatan posyandu bersama warga Dusun Gondangan Kidul.</p>
+          </div>  
+        </div>
+
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="assets/kegiatan/hadroh.jpeg" alt="Hadroh">
+          </div>
+          <div class="place-body">
+            <h4>Hadroh</h4>
+            <p>Kegiatan hadroh bersama warga Dusun Gondangan Kidul.</p>
+          </div>
+        </div>
+
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="assets/kegiatan/mujahadah.jpeg" alt="Mujahadah">
+          </div>
+          <div class="place-body">
+            <h4>Mujahadah</h4>
+            <p>Kegiatan doa dan perbaikan diri bersama warga sekitar.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kegiatan Extra (hidden by default, toggled by JS) -->
+      <div class="extra-cards" id="kegiatanExtra">
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="assets/kegiatan/TPA.jpeg" alt="TPA">
+          </div>
+          <div class="place-body">
+            <h4>TPA</h4>
+            <p>Kegiatan belajar membaca Iqro dan Al - Quran bersama adik - adik.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="umkm-toggle-wrap">
+        <button class="toggle-btn" id="kegiatanToggleBtn">
+          <span class="label">Selengkapnya</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer-banner">
+    <strong>Dusun Gondangan Kidul</strong>
+    <span>2026 &middot; KKN AA.84.128</span> 
+    <span>Dibuat dengan ❤️ oleh Tim KKN AA.84.128</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
